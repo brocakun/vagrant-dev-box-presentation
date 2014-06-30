@@ -154,9 +154,26 @@ $ vagrant reload
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
+					<h2>Vagrant for Drupal</h2>
 					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
+						<p>
+							Vagrant + Drupal + Solr + Xdebug.
+						</p>
+						<small>
+							<a href="http://renaud-cuny.com/en/blog/2014-02-09-vagrant-drupal-solr-xdebug/" class="navigate-down">http://renaud-cuny.com/en/blog/2014-02-09-vagrant-drupal-solr-xdebug/</a>
+						</small>
+
+					<pre><code data-trim contenteditable>
+$ git clone https://github.com/rcuny/vagrant-drupal-xdebug-solr ~/vagrant/vagrant-drupal-day-monterrey
+$ cd ~/vagrant/vagrant-drupal-day-monterrey
+$ sudo chmod 777 /var/www/
+$ vagrant up
+$ vagrant ssh
+$ sudo ln -s /opt/VBoxGuestAdditions-4.3.10/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
+$ exit
+$ vagrant reload
+					</code></pre>
+						
 					</p>
 				</section>
 
